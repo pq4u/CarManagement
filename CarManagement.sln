@@ -2,9 +2,20 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{163121F7-8F98-42ED-8310-35E6754ABE9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Domain", "CarManagement.Domain\CarManagement.Domain.csproj", "{35886D43-1C03-493B-ABC7-E7A05CCC3728}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35886D43-1C03-493B-ABC7-E7A05CCC3728} = {163121F7-8F98-42ED-8310-35E6754ABE9B}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35886D43-1C03-493B-ABC7-E7A05CCC3728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35886D43-1C03-493B-ABC7-E7A05CCC3728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35886D43-1C03-493B-ABC7-E7A05CCC3728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35886D43-1C03-493B-ABC7-E7A05CCC3728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
