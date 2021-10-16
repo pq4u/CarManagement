@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FluentValidation.Results;
 
 namespace CarManagement.Application.Responses
 {
     public class BaseResponse
     {
-        public BaseResponse Status { get; set; }
+        public ResponseStatus Status { get; set; }
         public bool Success { get; set; }
         public string Message { get; set; }
         public List<string> ValidationErrors { get; set; }
@@ -15,7 +16,6 @@ namespace CarManagement.Application.Responses
             ValidationErrors = new List<string>();
             Success = true;
         }
-
         public BaseResponse(string message = null)
         {
             ValidationErrors = new List<string>();
@@ -32,7 +32,7 @@ namespace CarManagement.Application.Responses
 
         public BaseResponse(ValidationResult validationResult)
         {
-            ValidationErrors = new List<string>();
+            ValidationErrors = new List<String>();
             Success = validationResult.Errors.Count < 0;
             foreach (var item in validationResult.Errors)
             {
