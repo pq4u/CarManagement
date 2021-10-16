@@ -2,7 +2,7 @@
 
 namespace CarManagement.Application.Contracts.Persistence
 {
-    public interface IBrandRepostiory : IAsyncRepository<Brand>
+    public interface IBrandRepository : IAsyncRepository<Brand>
     {
         
     }
