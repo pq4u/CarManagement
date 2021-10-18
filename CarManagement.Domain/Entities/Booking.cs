@@ -6,6 +6,8 @@ namespace CarManagement.Domain.Entities
     public class Booking : AuditableEntity
     {
         public int BookingId { get; set; }
+
+        public string Title { get; set; }
         
         public int VehicleId { get; set; }
         

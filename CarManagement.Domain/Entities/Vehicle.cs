@@ -12,7 +12,7 @@ namespace CarManagement.Domain.Entities
         
         public Model Model { get; set; }
         
-        public int MakeId { get; set; }
+        public int BrandId { get; set; }
         
         public Brand Brand { get; set; }
         
