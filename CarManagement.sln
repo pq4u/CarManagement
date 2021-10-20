@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Persistence.EF", "CarManagement.Persistence.EF\CarManagement.Persistence.EF.csproj", "{B80FF013-24E3-488E-A6AC-BDBC5A6CBD1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement.Api", "CarManagement.Api\CarManagement.Api.csproj", "{7A52D3C8-367F-4BE6-9DEF-F844CC9FE9B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,7 @@ Global
 		{35886D43-1C03-493B-ABC7-E7A05CCC3728} = {163121F7-8F98-42ED-8310-35E6754ABE9B}
 		{C927CE93-4554-4597-AAE5-8741AF4D3BD5} = {163121F7-8F98-42ED-8310-35E6754ABE9B}
 		{B80FF013-24E3-488E-A6AC-BDBC5A6CBD1D} = {163121F7-8F98-42ED-8310-35E6754ABE9B}
+		{7A52D3C8-367F-4BE6-9DEF-F844CC9FE9B7} = {163121F7-8F98-42ED-8310-35E6754ABE9B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{35886D43-1C03-493B-ABC7-E7A05CCC3728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -31,5 +34,9 @@ Global
 		{B80FF013-24E3-488E-A6AC-BDBC5A6CBD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B80FF013-24E3-488E-A6AC-BDBC5A6CBD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B80FF013-24E3-488E-A6AC-BDBC5A6CBD1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A52D3C8-367F-4BE6-9DEF-F844CC9FE9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A52D3C8-367F-4BE6-9DEF-F844CC9FE9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A52D3C8-367F-4BE6-9DEF-F844CC9FE9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A52D3C8-367F-4BE6-9DEF-F844CC9FE9B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
