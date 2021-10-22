@@ -1,5 +1,6 @@
 # Car Management
-> It's an Web API for managing cars
+It's an Web API for managing cars
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
