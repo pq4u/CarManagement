@@ -3,9 +3,6 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Features](#features)
-* [Status](#status)
-* [Sreenshots](#screenshots)
 
 ## General info
 Car rental management application. It allows you to manage such things as bookings, vehicles, customers etc. It allows for CRUD operations, in the future I plan to extend it to more advanced functionalities.
