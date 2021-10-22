@@ -3,7 +3,7 @@ using MediatR;
 
 namespace CarManagement.Application.Features.Vehicles.Queries.GetVehicleDetail
 {
-    public class GetVehicleDetailQuery : IRequest<VehicleInListViewModel>, IRequest<VehicleDetailViewModel>
+    public class GetVehicleDetailQuery : IRequest<VehicleDetailViewModel>
     {
         public int Id { get; set; }
     }

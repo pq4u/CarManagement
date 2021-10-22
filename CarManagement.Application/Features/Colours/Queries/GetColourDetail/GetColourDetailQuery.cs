@@ -3,7 +3,7 @@ using MediatR;
 
 namespace CarManagement.Application.Features.Colours.Queries.GetColourDetail
 {
-    public class GetColourDetailQuery : IRequest<ColourInListViewModel>, IRequest<ColourDetailViewModel>
+    public class GetColourDetailQuery : IRequest<ColourDetailViewModel>
     {
         public int Id { get; set; }
     }

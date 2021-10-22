@@ -5,7 +5,7 @@ using MediatR;
 
 namespace CarManagement.Application.Features.Bookings.Queries.GetBookingDetail
 {
-    public class GetBookingDetailQuery : IRequest<BookingInListViewModel>, IRequest<BookingDetailViewModel>
+    public class GetBookingDetailQuery : IRequest<BookingDetailViewModel>
     {
         public int Id { get; set; }
     }
