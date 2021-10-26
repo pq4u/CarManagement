@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CarManagement.Application\CarManagement.Application.csproj" />
+      <ProjectReference Include="..\CarManagement.Infrastructure\CarManagement.Infrastructure.csproj" />
       <ProjectReference Include="..\CarManagement.Persistence.EF\CarManagement.Persistence.EF.csproj" />
     </ItemGroup>
 

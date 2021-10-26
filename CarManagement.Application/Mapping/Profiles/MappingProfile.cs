@@ -6,6 +6,7 @@ using CarManagement.Application.Features.Bookings.Queries.GetBookingsList;
 using CarManagement.Application.Features.Brands.Commands.CreateBrand;
 using CarManagement.Application.Features.Brands.Commands.EditBrand;
 using CarManagement.Application.Features.Brands.Queries.GetBrandDetail;
+using CarManagement.Application.Features.Brands.Queries.GetBrandsExport;
 using CarManagement.Application.Features.Brands.Queries.GetBrandsList;
 using CarManagement.Application.Features.Colours.Commands.AddColour;
 using CarManagement.Application.Features.Colours.Commands.EditColour;
@@ -42,6 +43,7 @@ namespace CarManagement.Application.Mapping.Profiles
             CreateMap<Brand, BrandDetailViewModel>();
             CreateMap<Brand, CreateBrandCommand>().ReverseMap();
             CreateMap<Brand, UpdateBrandCommand>().ReverseMap();
+            CreateMap<Brand, BrandExportDto>();
             
             CreateMap<Colour, ColourInListViewModel>()
                 .ReverseMap();

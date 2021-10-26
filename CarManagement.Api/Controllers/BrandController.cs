@@ -4,6 +4,7 @@ using CarManagement.Application.Features.Brands.Commands.CreateBrand;
 using CarManagement.Application.Features.Brands.Commands.DeleteBrand;
 using CarManagement.Application.Features.Brands.Commands.EditBrand;
 using CarManagement.Application.Features.Brands.Queries.GetBrandDetail;
+using CarManagement.Application.Features.Brands.Queries.GetBrandsExport;
 using CarManagement.Application.Features.Brands.Queries.GetBrandsList;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -66,6 +67,14 @@ namespace CarManagement.Api.Controllers
             var deleteBrandCommand = new DeleteBrandCommand() {BrandId = id};
             await _mediator.Send(deleteBrandCommand);
             return NoContent();
+        }
+        
+        [HttpGet("export", Name = "ExportBrands")]
+        public async Task<FileResult> ExportEvents()
+        {
+            var fileDto = await _mediator.Send(new GetBrandsExportQuery());
+
+            return File(fileDto.Data, fileDto.ContentType, fileDto.BrandExportFileName);
         }
     }
 }

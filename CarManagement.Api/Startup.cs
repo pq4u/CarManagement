@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using CarManagement.Application;
+using CarManagement.Infrastructure;
 using CarManagement.Persistence.EF;
 using CarManagement.Persistence.EntityFramework;
 
@@ -37,6 +38,8 @@ namespace CarManagement.Api
             
             services.AddCarManagementApplication();
             services.AddCarManagementPersistenceEfServices(Configuration);
+            services.AddInfrastructureServices(Configuration);
+            
             services.AddControllers();
 
             services.AddCors(options =>
