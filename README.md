@@ -16,4 +16,5 @@ The project is built on a clean architecture and CQRS pattern.
 * Fluent Validation 10.3.3
 * AutoMapper 10.1.1
 * MediatR 9.0.0
+* CsvHelper 12.3.0
 * Swagger

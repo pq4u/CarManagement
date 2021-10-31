@@ -1,4 +1,4 @@
-﻿using CarManagement.Application.Contracts.Infrastructure;
+using CarManagement.Application.Contracts.Infrastructure;
 using CarManagement.Infrastructure.FileExport;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
