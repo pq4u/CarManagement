@@ -4,6 +4,7 @@ using CarManagement.Application.Features.Vehicles.Commands.AddVehicle;
 using CarManagement.Application.Features.Vehicles.Commands.DeleteVehicle;
 using CarManagement.Application.Features.Vehicles.Commands.EditVehicle;
 using CarManagement.Application.Features.Vehicles.Queries.GetVehicleDetail;
+using CarManagement.Application.Features.Vehicles.Queries.GetVehiclesExport;
 using CarManagement.Application.Features.Vehicles.Queries.GetVehiclesList;
 using MediatR;
 using Microsoft.AspNetCore.Http;

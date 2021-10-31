@@ -4,6 +4,7 @@ using CarManagement.Application.Features.Customers.Commands.AddCustomer;
 using CarManagement.Application.Features.Customers.Commands.DeleteCustomer;
 using CarManagement.Application.Features.Customers.Commands.EditCustomer;
 using CarManagement.Application.Features.Customers.Queries.GetCustomerDetail;
+using CarManagement.Application.Features.Customers.Queries.GetCustomersExport;
 using CarManagement.Application.Features.Customers.Queries.GetCustomersList;
 using MediatR;
 using Microsoft.AspNetCore.Http;

@@ -4,6 +4,7 @@ using CarManagement.Application.Features.Bookings.Commands.CreateBooking;
 using CarManagement.Application.Features.Bookings.Commands.DeleteBooking;
 using CarManagement.Application.Features.Bookings.Commands.UpdateBooking;
 using CarManagement.Application.Features.Bookings.Queries.GetBookingDetail;
+using CarManagement.Application.Features.Bookings.Queries.GetBookingsExport;
 using CarManagement.Application.Features.Bookings.Queries.GetBookingsList;
 using MediatR;
 using Microsoft.AspNetCore.Http;

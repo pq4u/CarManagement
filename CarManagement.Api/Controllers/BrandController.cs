@@ -4,6 +4,7 @@ using CarManagement.Application.Features.Brands.Commands.CreateBrand;
 using CarManagement.Application.Features.Brands.Commands.DeleteBrand;
 using CarManagement.Application.Features.Brands.Commands.EditBrand;
 using CarManagement.Application.Features.Brands.Queries.GetBrandDetail;
+using CarManagement.Application.Features.Brands.Queries.GetBrandsExport;
 using CarManagement.Application.Features.Brands.Queries.GetBrandsList;
 using MediatR;
 using Microsoft.AspNetCore.Http;

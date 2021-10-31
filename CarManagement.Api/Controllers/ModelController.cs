@@ -4,6 +4,7 @@ using CarManagement.Application.Features.Models.Commands.AddModel;
 using CarManagement.Application.Features.Models.Commands.DeleteModel;
 using CarManagement.Application.Features.Models.Commands.EditModel;
 using CarManagement.Application.Features.Models.Queries.GetModelDetail;
+using CarManagement.Application.Features.Models.Queries.GetModelsExport;
 using CarManagement.Application.Features.Models.Queries.GetModelsList;
 using MediatR;
 using Microsoft.AspNetCore.Http;
