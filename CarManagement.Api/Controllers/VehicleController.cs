@@ -67,5 +67,13 @@ namespace CarManagement.Api.Controllers
             await _mediator.Send(deleteVehicleCommand);
             return NoContent();
         }
+        
+        [HttpGet("export", Name = "ExportVehicles")]
+        public async Task<FileResult> ExportVehicles()
+        {
+            var fileDto = await _mediator.Send(new GetVehiclesExportQuery());
+
+            return File(fileDto.Data, fileDto.ContentType, fileDto.VehicleExportFileName);
+        }
     }
 }

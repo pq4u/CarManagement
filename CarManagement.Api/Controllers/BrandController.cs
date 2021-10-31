@@ -67,5 +67,13 @@ namespace CarManagement.Api.Controllers
             await _mediator.Send(deleteBrandCommand);
             return NoContent();
         }
+        
+        [HttpGet("export", Name = "ExportBrands")]
+        public async Task<FileResult> ExportBrands()
+        {
+            var fileDto = await _mediator.Send(new GetBrandsExportQuery());
+
+            return File(fileDto.Data, fileDto.ContentType, fileDto.BrandExportFileName);
+        }
     }
 }

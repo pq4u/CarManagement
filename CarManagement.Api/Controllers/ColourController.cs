@@ -67,5 +67,13 @@ namespace CarManagement.Api.Controllers
             await _mediator.Send(deleteColourCommand);
             return NoContent();
         }
+        
+        [HttpGet("export", Name = "ExportColours")]
+        public async Task<FileResult> ExportColours()
+        {
+            var fileDto = await _mediator.Send(new GetColoursExportQuery());
+
+            return File(fileDto.Data, fileDto.ContentType, fileDto.ColourExportFileName);
+        }
     }
 }
