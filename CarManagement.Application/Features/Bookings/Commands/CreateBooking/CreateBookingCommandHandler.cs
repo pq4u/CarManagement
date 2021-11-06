@@ -1,7 +1,10 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
+using CarManagement.Application.Contracts.Infrastructure;
 using CarManagement.Application.Contracts.Persistence;
+using CarManagement.Application.Models.Mail;
 using CarManagement.Domain.Entities;
 using MediatR;
 
@@ -11,11 +14,13 @@ namespace CarManagement.Application.Features.Bookings.Commands.CreateBooking
     {
         private readonly IBookingRepository _bookingRepository;
         private readonly IMapper _mapper;
+        private readonly IEmailService _emailService;
 
-        public CreateBookingCommandHandler(IBookingRepository bookingRepository, IMapper mapper)
+        public CreateBookingCommandHandler(IBookingRepository bookingRepository, IMapper mapper, IEmailService emailService)
         {
             _bookingRepository = bookingRepository;
             _mapper = mapper;
+            _emailService = emailService;
         }
 
         public async Task<CreateBookingCommandResponse> Handle(CreateBookingCommand request,
@@ -29,6 +34,22 @@ namespace CarManagement.Application.Features.Bookings.Commands.CreateBooking
 
             var booking = _mapper.Map<Booking>(request);
             booking = await _bookingRepository.AddAsync(booking);
+            
+            var email = new Email()
+            {
+                To = "example@name.com",
+                Body = $"A new booking has been created: {request}",
+                Subject = $"New booking: {request}"
+            };
+
+            try
+            {
+                await _emailService.SendEmail(email);
+            }
+            catch (Exception ex)
+            {
+
+            }
 
             return new CreateBookingCommandResponse(booking.BookingId);
         }
