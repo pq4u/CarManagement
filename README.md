@@ -6,7 +6,7 @@ It's an Web API for managing cars
 * [Technologies](#technologies)
 
 ## General info
-Car rental management application. It allows you to manage such things as bookings, vehicles, customers etc. There is a functionality available that allows you to send an e-mail address after performing an action. It is also possible to export data to a csv file. It allows for CRUD operations, in the future I plan to extend it to more advanced functionalities.
+Car rental management application. It allows you to manage such things as bookings, vehicles, customers etc. It allows for CRUD operations, in the future I plan to extend it to more advanced functionalities. At the moment here is a functionality available that allows you to send an e-mail address after performing an action. It is also possible to export data to a csv file. 
 The project is built on a clean architecture and CQRS pattern.
 
 ## Technologies
