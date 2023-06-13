@@ -10,9 +10,9 @@ Car rental management application. It allows you to manage such things as bookin
 The project is built on a clean architecture and CQRS pattern.
 
 ## Technologies
-* .NET 5
+* .NET 6
 * ASP.NET Core
-* Entity Framework Core 5.0.11
+* Entity Framework Core 6.0.16
 * Fluent Validation 10.3.3
 * AutoMapper 10.1.1
 * MediatR 9.0.0
